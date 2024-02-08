@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-
-
-<html xmlns="http://www.thymeleaf.org">
-
+<html lang="es">
 <head>
-    <title>index</title> <!-- muestra el titulo en la pestaña del navegador -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <style>
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+        main {
+            text-align: center;
+        }
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
 </head>
+<body>
 
-<header>
-    
+<header class="container">
     <h1>CARRERAS A DISTANCIAS</h1>
-<h2> PERFECCIONATE EN NUESTRA SEDE</h2>
-<button>INICIO</button>    
-<button>REGISTRO DE ALUMNO</button>
-<button>REGISTRO DE DOCENTE</button>
-<button>DATOS DE ALUMNOS</button>
-<button>DATOS DE PROFESOR</button>
+    <h2>PERFECCIONATE EN NUESTRA SEDE</h2>
+    <a href="http://localhost:8080/" class="btn btn-primary">INICIO</a>
+    <a href="http://localhost:8080/formularioAlumnos" class="btn btn-primary">REGISTRO DE ALUMNO</a>
+    <button class="btn btn-primary">REGISTRO DE DOCENTE</button>
+    <a href="http://localhost:8080/VistaDeAlumnose" class="btn btn-primary">DATOS DE ALUMNOS</a>
+    <button class="btn btn-primary">DATOS DE PROFESOR</button>
 </header>
 
-
-
-
-<main>
-    <img src="/img/logo.png" alt="IES N6 Logo"><!--colocar img/nom.de imag./apodo-->
+<main class="container">
+    <img src="/img/logo.png" alt="IES N6 Logo">
 </main>
 
+</body>
 </html>
