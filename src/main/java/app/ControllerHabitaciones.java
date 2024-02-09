@@ -13,15 +13,16 @@ public class ControllerHabitaciones {
         // Devuelve el nombre de la vista que quieres mostrar
         return "index";
     }
-    @GetMapping("/VistaDeAlumnose")
-    public String VistaDeAlumnos () {
+    @GetMapping("/INFORMACIONDEHABITACIONES")
+    public String VistaDeHABITACIONES
+     () {
         // Devuelve el nombre de la vista que quieres mostrar
-        return "VistaDeAlumnos";
+        return "Habitaciones";
     }
 
-    @GetMapping("/formularioAlumnos")
-    public String formularioAlumno () {
+    @GetMapping("/REGISTRODEHABITACIONES")
+    public String ARCHIVODEHABITACIONES () {
         // Devuelve el nombre de la vista que quieres mostrar
-        return "formularioAlumno.html";
+        return "FormularioDeHabitaciones";
     }
 }
